@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function myfun(){
+ var a=parseInt(document.getElementById("input0").value);
+ var b=parseInt(document.getElementById("input1"));
+ var add=(a+b);
+ alert(add);
+}
+</script>
+</head>
+<body>
+<form>
+enter  first number
+<input type="text" id="input0" required;><br>
+enter second number
+<input type="text" id="input1" required;><br>
+<input type="button" value="add" onclick="myfun();"><br>
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<script> 
+function myfun(){
+var x=document.getElementById("d1").value;
+if(x=="" || x=="null")
+{
+ var text="u entered wrong name";
+}
+else{
+ text="u entered correcr name";
+}
+ document.getElementById("d2").innerHTML=text;
+}
+function myfun1(){
+var y=document.getElementById("d3").value;
+if(y.length==10)
+{
+var z="u entered number is correct";
+}
+else{
+ z="u entered wrong number";
+}
+document.getElementById("d4").innerHTML=z;
+
+}
+</script>
+<body>
+<form action="/action_page.php">
+enter name<br>
+<input type="text" id="d1">
+<h2 id="d2"></h2>
+<button type="button" onclick="myfun()">click</button><br>
+enter number<br>
+<input type="text" id="d3">
+<h3 id="d4"></h3>
+<button type="button" onclick="myfun1()">click</button><br>
+</form>
+</body>
+
+

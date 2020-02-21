@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function myfun(){
+var x=parseInt(document.getElementById("a").value);
+var y=parseInt(document.getElementById("b").value);
+var add=x+y;
+var sub=x-y;
+var div=x/y;
+document.write(add);
+alert(sub);
+alert(div);
+}
+</script>
+</head>
+<body>
+<form>
+<input type="number" id="a" placeholder="a">
+<input type="text" id="b" placeholder="b">
+<button type="button" onclick="myfun()">add</button>
+<button type="button" onclick="myfun()">sub</button>
+<button type="button" onclick="myfun()">div</button>
+</form>
+</body>
+</html>

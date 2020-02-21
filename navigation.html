@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="javascript.js"></script>
+<style>
+ul {
+list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f1f1f1;
+  position:fixed;
+  height: 100%;
+  overflow: auto;
+}
+ li a{
+   display:block;
+   text-decoration:none;
+   padding:6px 20px;
+} 
+  li a:hover{
+     background-color:red;
+     color:white;
+}
+  li a.active{
+    background-color:pink;
+    color:white;
+}
+li a.active:not(.active){
+    background-color:pink;
+    color:white;
+}
+
+</style>
+</head>
+<body>
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
