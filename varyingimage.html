@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+<script launguage=JavaScript>
+var i=0,a;
+var id;
+a=new Array();
+a[0]="image1.jpg";
+a[1]="image2.jpg";
+a[2]="image3.jpg";
+
+a[3]="image4.jpg";
+
+a[4]="image5.jpg";
+
+
+function starts(){
+
+document.img1.src=a[i];
+i++;
+
+id=setTimeout("starts()",1000);
+if(i==5)
+i=0;
+}
+
+function stop(){
+
+clearTimeout(id);
+}
+</script>
+
+<img name=img1 src="image1.jpg" height="300" width="350">
+
+<form>
+<input type=button name=t1 value="Start" onClick="starts();">
+
+<input type=button name=t2 value="Stop" onClick="stop();">
+</form>
+</html>
+
+
+
+
+
